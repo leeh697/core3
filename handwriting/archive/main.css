@@ -1,0 +1,89 @@
+body{
+  background-color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  position: fixed;
+  width: 184px;
+  height: 117px;
+  flex-shrink: 0;
+  background: url('title.svg');
+  display: flex;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.subheading{
+  color: #F04F27;
+  font-family: Helvetica;
+  font-size: 24.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.486px;
+  margin-left: 3px;
+  transform: translateY(130px);
+  margin-left: 20px;
+  margin-top: 25px;
+  position: fixed;
+}
+
+.box {
+  position: absolute;
+  right: 0.5px;
+  width: 1259px; /* 고정된 너비 */
+  height: auto; /* 고정 높이 제거 */
+  background-color: #FCF6F5;
+  display: grid; /* 그리드 레이아웃 */
+  grid-template-columns: repeat(5, 1fr); /* 4열 */
+  grid-template-rows: repeat(6, 1fr); /* 6행 */
+/*  gap: -1.5px;*/
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  border: 1px solid black;
+}
+
+.box img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+}
+
+.box div:nth-child(n + 5) {
+  border-top: 2px solid black; 
+}
+
+.box img:nth-child(4n) {
+  border-right: none;
+}
+
+
+/*------------------------------------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* Cursor change to show that clicking on the background closes the modal */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border: 1px solid black;
+}
+
+
