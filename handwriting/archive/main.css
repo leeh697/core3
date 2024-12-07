@@ -10,10 +10,11 @@ body{
   width: 184px;
   height: 117px;
   flex-shrink: 0;
-  background: url('title.svg');
+/*  background: url('title.svg');*/
   display: flex;
   margin-left: 20px;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .title img {
