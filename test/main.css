@@ -1,0 +1,103 @@
+body{
+  background-color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  position: fixed;
+  width: 184px;
+  height: 117px;
+  flex-shrink: 0;
+/*  background: url('title.svg');*/
+  display: flex;
+  margin-left: 20px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.title img {
+  display: block; /* 링크 영역을 이미지 크기와 일치시킴 */
+  width: 184px; /* 이미지 크기를 제목과 일치시키기 */
+  height: 117px;
+  cursor: pointer; /* 클릭 가능하다는 힌트를 줌 */
+}
+
+a{
+  text-decoration: none;
+  color: #F04F27;
+}
+
+.subheading{
+  color: #F04F27;
+  font-family: Helvetica;
+  font-size: 24.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.486px;
+  margin-left: 3px;
+  transform: translateY(130px);
+  margin-left: 20px;
+  margin-top: 25px;
+  position: fixed;
+}
+/*------------------------------*/
+
+.box {
+  position: absolute;
+  right: 0.5px;
+  width: 1259px; 
+  height: 858px;
+  flex-shrink: 0;
+  background-color: #F04F27;
+  overflow-y: hidden;
+
+  display: flex;
+  flex-direction: column; /* 수직 정렬 */
+  align-items: center;    /* 가로 중앙 정렬 */
+  justify-content: center;
+}
+
+.first{
+  color: #FFF;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.06px;
+  margin-bottom: 20px;
+}
+
+.second{
+  color: #FFF;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  margin-bottom: 40px;
+}
+
+.rec{
+  width: 250px;
+  height: 76px;
+  flex-shrink: 0;
+  border-radius: 17px;
+  background: #FFF;
+  color: #F04F27;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+/*------------------------------------------------*/
