@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<title>Handwriting Personality Test</title>
+</head>
+<body>
+	<div class="title">
+      <a href="https://leeh697.github.io/core3">
+        <img src="title.svg" alt="Title">
+      </a>
+    </div>
+
+	<div class="subheading">HANDWRITING</br>PERSONALITY</br>TEST</div>
+
+
+	<div id="quiz-container">
+		<!-- Q1------------------- -->
+    <div class="question" id="q1">
+    	<p>Which of the following applies to</br>your handwriting?</p>
+    	<button class="answer" data-value="0">Larger letters</button>
+      <button class="answer" data-value="1">Smaller letters</button>
+	  </div>
+
+	  <!-- Question 2 -->
+    <div class="question" id="q2" style="display: none;">
+      <p>Which of the following applies to</br>your handwriting?</p>
+      <button class="answer" data-value="0">Uphill/Downhill line</button>
+      <button class="answer" data-value="1">Straight line</button>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question" id="q3" style="display: none;">
+      <p>Which of the following applies to</br>your handwriting?</p>
+      <button class="answer" data-value="0">Rounded letter</button>
+      <button class="answer" data-value="1">Pointed letter</button>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question" id="q4" style="display: none;">
+      <p>Which of the following applies to</br>your handwriting?</p>
+      <button class="answer" data-value="0">Slow & Deliberate handwrting</button>
+      <button class="answer" data-value="1">Rushed handwriting</button>
+    </div>
+
+    <!-- Result -->
+    <div id="result" style="display: none;">
+      <p>Your personality reflects: <span id="personality"></span></p>
+    </div>
+  </div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>	
